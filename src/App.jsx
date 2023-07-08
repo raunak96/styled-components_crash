@@ -1,4 +1,14 @@
+import Container from "@/components/styles/Container.styled";
+import Header from "@/components/Header";
+
 const App = () => {
-	return <div>App</div>;
+	return (
+		<>
+			<Header />
+			<Container>
+				<h1>Hello</h1>
+			</Container>
+		</>
+	);
 };
 export default App;
