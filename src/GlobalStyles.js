@@ -6,6 +6,9 @@ export const theme = {
 		body: "#fff",
 		footer: "#003333",
 	},
+	screen: {
+		mobile: "768px",
+	},
 };
 
 export const GlobalStyles = createGlobalStyle`
