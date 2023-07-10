@@ -12,7 +12,6 @@ export const theme = {
 };
 
 export const GlobalStyles = createGlobalStyle`
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
     * {
         box-sizing: border-box;
@@ -24,6 +23,11 @@ export const GlobalStyles = createGlobalStyle`
         font-family: 'Poppins', sans-serif;
         font-size: 1.15em;
         margin: 0;
+    }
+    #root{
+        display: flex ;
+        flex-direction: column;
+        height: 100vh;
     }
 
     p {

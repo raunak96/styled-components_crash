@@ -22,7 +22,7 @@ const Header = () => {
 							discussion.
 						</p>
 
-						<Button bg="#ff0099" color="#fff">
+						<Button $bg="#ff0099" $color="#fff">
 							Get Started For Free
 						</Button>
 					</div>
