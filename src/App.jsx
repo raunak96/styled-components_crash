@@ -5,6 +5,8 @@ import { GlobalStyles, theme } from "./GlobalStyles";
 import { useEffect, useState } from "react";
 import data from "./data";
 import Loader from "./components/Loader";
+import Card from "./components/Card";
+import Footer from "./components/Footer";
 
 const App = () => {
 	const [content, setContent] = useState([]);
@@ -25,11 +27,12 @@ const App = () => {
 			<Header />
 			<Container $maxspace={true}>
 				{content.length ? (
-					content.map(item => <p key={item.id}>{item.title}</p>)
+					content.map(item => <Card key={item.id} item={item} />)
 				) : (
 					<Loader />
 				)}
 			</Container>
+			<Footer />
 		</ThemeProvider>
 	);
 };
